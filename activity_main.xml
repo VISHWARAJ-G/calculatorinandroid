@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#38040e"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btn6"
+        style="@style/CalcButton"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="188dp"
+        android:text="6"
+        app:layout_constraintStart_toEndOf="@id/btn5"
+        app:layout_constraintTop_toBottomOf="@id/btn9" />
+
+    <Button
+        android:id="@+id/btn5"
+        style="@style/CalcButton"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="188dp"
+        android:text="5"
+        app:layout_constraintStart_toEndOf="@id/btn4"
+        app:layout_constraintTop_toBottomOf="@id/btn8" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        style="@style/CalcButtonOp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="188dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnEq"
+        app:layout_constraintTop_toBottomOf="@id/btnSub"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn7"
+        style="@style/CalcButton"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="188dp"
+        android:text="7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etInput" />
+
+    <Button
+        android:id="@+id/btn8"
+        style="@style/CalcButton"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="188dp"
+        android:text="8"
+        app:layout_constraintStart_toEndOf="@id/btn7"
+        app:layout_constraintTop_toBottomOf="@id/etInput" />
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="358dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="188dp"
+        android:background="#E5E5F2"
+        android:enabled="false"
+        android:hint="0"
+        android:inputType="text"
+        android:textAlignment="viewEnd"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn3"
+        style="@style/CalcButton"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="188dp"
+        android:text="3"
+        app:layout_constraintStart_toEndOf="@id/btn2"
+        app:layout_constraintTop_toBottomOf="@id/btn6" />
+
+    <Button
+        android:id="@+id/btn4"
+        style="@style/CalcButton"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="188dp"
+        android:text="4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn7" />
+
+    <Button
+        android:id="@+id/btn2"
+        style="@style/CalcButton"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="188dp"
+        android:text="2"
+        app:layout_constraintStart_toEndOf="@id/btn1"
+        app:layout_constraintTop_toBottomOf="@id/btn5" />
+
+    <Button
+        android:id="@+id/btnC"
+        style="@style/CalcButtonOp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="188dp"
+        android:text="C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn0"
+        app:layout_constraintTop_toBottomOf="@id/btn2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn9"
+        style="@style/CalcButton"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="188dp"
+        android:text="9"
+        app:layout_constraintStart_toEndOf="@id/btn8"
+        app:layout_constraintTop_toBottomOf="@id/etInput" />
+
+    <Button
+        android:id="@+id/btn1"
+        style="@style/CalcButton"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="192dp"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn4" />
+
+    <Button
+        android:id="@+id/btnEq"
+        style="@style/CalcButtonOp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="188dp"
+        android:text="="
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnC"
+        app:layout_constraintTop_toBottomOf="@id/btn3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn0"
+        style="@style/CalcButton"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="188dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnDiv"
+        style="@style/CalcButtonOp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="188dp"
+        android:text="/"
+        app:layout_constraintStart_toEndOf="@id/btn9"
+        app:layout_constraintTop_toBottomOf="@id/etInput" />
+
+    <Button
+        android:id="@+id/btnSub"
+        style="@style/CalcButtonOp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="192dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@id/btn3"
+        app:layout_constraintTop_toBottomOf="@id/btnMul" />
+
+    <Button
+        android:id="@+id/btnMul"
+        style="@style/CalcButtonOp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="188dp"
+        android:text="*"
+        app:layout_constraintStart_toEndOf="@id/btn6"
+        app:layout_constraintTop_toBottomOf="@id/btnDiv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
